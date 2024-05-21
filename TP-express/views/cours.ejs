@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= titre %></title>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/">Accueil</a>
+      <a href="/cours">Cours</a>
+    </nav>
+  </header>
+  <main>
+    <h1><%= titre %></h1>
+    <p><%= descriptif %></p>
+    <h2>Enseignants</h2>
+    <ul>
+      <% enseignants.forEach((enseignant) => { %>
+        <li><%= enseignant %></li>
+      <% }) %>
+    </ul>
+  </main>
+</body>
+</html>
